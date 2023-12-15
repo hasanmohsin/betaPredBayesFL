@@ -1,4 +1,4 @@
-Code for "One Round Federated Learning with Predictive Space Bayesian Inference"
+Code for "Calibrated One Round Federated Learning with Bayesian Inference in the Predictive Space"
 
 To run experiments: do
 
