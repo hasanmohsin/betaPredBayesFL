@@ -280,6 +280,9 @@ def get_airquality(batch_size, normalize = True):
     df1 = df1.drop(columns=['DATE'])
     df1 = df1.drop(columns=['TIME'])
     
+    #drop invalid values (-200)
+    df1 = df1[df1['CO_GT'] != -200]
+
     df1.to_pickle("./Dataset/AirQualityProcessedDF.pickle")
     col1 = df1.columns.tolist()
     if normalize:
